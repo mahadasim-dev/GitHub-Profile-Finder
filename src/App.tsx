@@ -70,7 +70,7 @@ export default function App() {
           <h4>Username: {profile.login}</h4>
           <h5>Name: {profile.name || 'Not Available'}</h5>
 
-          <p className='bio-text'>Bio: {profile.bio === null ? 'This user has no bio' : profile.bio}</p>
+          <p>Bio: {profile.bio === null ? <i>'This user has no bio'</i> : profile.bio}</p>
           <p>Followers: {profile.followers}</p>
           <p>Following: {profile.following}</p>
           <p>Public Repositories: {profile.public_repos}</p>
